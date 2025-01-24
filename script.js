@@ -5,7 +5,8 @@ btn.addEventListener('click',()=>{
 let options=document.querySelectorAll('option');
 	for(let el of options){
 		if(el.value==select.value){
-			select.removeChild(el);
+			// select.removeChild(el);
+			el.remove();
 			break;
 		}
 	}
